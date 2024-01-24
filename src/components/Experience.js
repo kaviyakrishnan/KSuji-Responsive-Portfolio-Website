@@ -1,6 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { ExpCard } from "./ExpCard";
 import expImgOne from "../assets/img/expImg1.jpg";
 import expImg2 from "../assets/img/expImg2.jpg";
+import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Experience = () => {
    
@@ -38,7 +40,10 @@ export const Experience = () => {
                             {
                                 experience.map((experience, index) => {
                                     return(
-                                        <p>{experience.title}</p>
+                                       <ExpCard
+                                       key={index}
+                                       {...experience}
+                                       />
                                     )
                                 })
                             }
@@ -50,6 +55,7 @@ export const Experience = () => {
                 </Col>
             </Row>
         </Container>
+        <img className="background-Img-right" src={colorSharp2} alt="" />
     </section>
     )
 }
