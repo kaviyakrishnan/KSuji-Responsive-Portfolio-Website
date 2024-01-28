@@ -9,7 +9,7 @@ export const Banner = () => {
     //word typed out set to false initially
     const [isDeleting,setIsDeleting] = useState(false);
     //animation rotating
-const toRotate = [" Software Developer ", " New Grad ", " Tech Savvy "];
+const toRotate = [" Software Developer ", " New Graduate ", " Tech Savvy "];
 //indicates portion of word displayed in roating animation
 const [text, setText] = useState('');
 //variable responsible for dtermining speed btw words
