@@ -59,7 +59,7 @@ return(
                     <h1>{`Hi i am Kaviya krishnan Suji`}</h1>
                     <h2><span className="wrap">{text}</span></h2>
                     <p>dfghbdiuhabbfggggauidgjnaikdngaubgdnokasmdfijandfgkadfghbaidkgmiasdgiaduhhSJNGI</p>
-                    <button onClick={() => console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/> </button>
+                    <button onClick={() => document.getElementById('contact')}>Let's Connect<ArrowRightCircle size={25}/> </button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt="Header Img" />

@@ -52,7 +52,7 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/kaviya_krishnan_suji/" ><img src={navImgThree} alt="" /></a>
 
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}>
+            <button  className="vvd" onClick={() => console.log('connect')}>
                 <span>
                     Let's connect
                 </span>

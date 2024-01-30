@@ -4,6 +4,7 @@ import { NavBar } from './components/Navbar.js';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import {Experience} from './components/Experience';
+import {Contact} from './components/Contact.js';
 //import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,6 +17,7 @@ function App() {
     <Banner />
     <Skills />
     <Experience />
+   <Contact />
    
     </div>
     

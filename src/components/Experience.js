@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ExpCard } from "./ExpCard";
-import expImgOne from "../assets/img/expImg1.jpg";
-import expImg2 from "../assets/img/expImg2.jpg";
+import expImgOne from "../assets/img/expImg1.png";
+import expImgTwo from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Experience = () => {
@@ -15,7 +15,7 @@ export const Experience = () => {
     {
         title: "Restaurant Supervisor",
         description: "bshdvluhgkdjsbjsd",
-        imgUrl: expImg2,
+        imgUrl: expImgTwo,
     }
 ];
     return(
