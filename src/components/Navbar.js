@@ -5,6 +5,7 @@ import logo from '../assets/img/logo.svg';
 import navImgOne from '../assets/img/navImgOne.svg';
 import navImgTwo from '../assets/img/navImgTwo.svg';
 import navImgThree from '../assets/img/navImgThree.svg';
+import {Link} from 'react-scroll';
 
 //creating functional component
 export const NavBar = () => {
@@ -52,11 +53,13 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/kaviya_krishnan_suji/" ><img src={navImgThree} alt="" /></a>
 
             </div>
-            <button  className="vvd" onClick={() => console.log('connect')}>
+            <Link to="connect" smooth={true} duration={500}>
+            <button  className="vvd">
                 <span>
                     Let's connect
                 </span>
             </button>
+            </Link>
           </span>
         </Navbar.Collapse>
       </Container>

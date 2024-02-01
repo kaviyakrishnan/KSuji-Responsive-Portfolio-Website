@@ -7,7 +7,7 @@ import navImgThree from '../assets/img/navImgThree.svg';
 
 export const Footer = () => {
     return (
-        <Footer classname="footer">
+        <footer classname="footer">
             <Container>
                 <Row classname="align-item-center">
                     <CustomForm />
@@ -25,6 +25,6 @@ export const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-        </Footer>
+        </footer>
     )
 }
