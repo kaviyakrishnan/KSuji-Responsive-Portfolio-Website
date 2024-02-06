@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { useEffect, useState } from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
@@ -12,7 +11,9 @@ export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [Scrolled, setScrolled] = useState(false);
 
+    // useEffect hook to handle scroll event and update state based on scroll position
     useEffect(() => {
+        // Function to check scroll position and update state accordingly
         const onScroll = () => {
             if (window.scrollY > 50) {
                 setScrolled(true);
@@ -23,6 +24,7 @@ export const NavBar = () => {
 
         window.addEventListener("scroll", onScroll);
 
+        // Cleanup function to remove event listener when component unmounts
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
@@ -30,6 +32,7 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
+    // Render JSX representing the navbar section of the portfolio
     return(
         <Navbar expand="lg" className={Scrolled ? "scrolled": ""}>
       <Container>

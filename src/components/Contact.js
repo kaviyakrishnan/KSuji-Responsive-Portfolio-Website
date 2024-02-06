@@ -4,6 +4,7 @@ import contactImg from '../assets/img/contact-img.svg';
 
 export const Contact = () => {
 
+    // Initial form details state
     const formIniDetails = {
         firstName: '',
         lastName: '',
@@ -12,10 +13,12 @@ export const Contact = () => {
         message: ''
     }
     
+    // State variables for form details, button text, and status message
         const [formDetails,setformDetails] = useState(formIniDetails);
         const [buttonText, setButtonText] = useState('Send');
         const [status, setStatus] = useState({});
 
+        // Function to update form details based on input changes
         const onFormUpdate = (category, value) => {
             setformDetails({
                 ...formDetails,
@@ -23,10 +26,12 @@ export const Contact = () => {
             })
         }
 
+        // Function to handle form submission
         const handleSubmit = async (e) =>
         {
             e.preventDefault();
             setButtonText('Sending..');
+            // Send form data to backend server
             let response = await fetch("http://localhost:5000/contact",{
                     method:"POST",
                     headers: {
@@ -49,6 +54,7 @@ export const Contact = () => {
             
         };
 
+        // Render JSX representing the Contact section of the portfolio
         return(
             <section className="contact" id="connect">
                 <Container>

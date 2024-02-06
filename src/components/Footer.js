@@ -6,6 +6,7 @@ import navImgTwo from '../assets/img/navImgTwo.svg';
 import navImgThree from '../assets/img/navImgThree.svg';
 
 export const Footer = () => {
+    // Render JSX representing the Footer section of the portfolio
     return (
         <footer classname="footer">
             <Container>

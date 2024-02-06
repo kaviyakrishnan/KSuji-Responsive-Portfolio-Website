@@ -7,6 +7,7 @@ import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
 
+    // Define breakpoints and corresponding number of items to display for different screen sizes
     const responsive = {
         superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -26,6 +27,7 @@ export const Skills = () => {
         }
     };
 
+    // Render JSX representing the skills section of the portfolio
     return (
         <section className="skills" id="skills">
             <Container>
@@ -35,7 +37,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p> lorem ipsum</p>
+                            <p> Here are some of my skills based on experience and knowledge. </p>
 
                             <Carousel responsive={responsive} infinite={true} className="skills-slider">
                                 <div className="item">
@@ -56,7 +58,43 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meterImg} alt="slider-Img" />
-                                    <h5>React</h5>
+                                    <h5>React Js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Phaser</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Node Js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Linux</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>HTML</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Git</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>C++</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Java</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meterImg} alt="slider-Img" />
+                                    <h5>Agile</h5>
                                 </div>
                             </Carousel>
                         </div>

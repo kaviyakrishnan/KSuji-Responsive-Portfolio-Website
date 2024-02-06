@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+//imports
 import './App.css';
 import { NavBar } from './components/Navbar.js';
 import { Banner } from './components/Banner';
@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-  
+  // Start of JSX block, wrapping elements in a div .Renders each component of App.
     <div className="App">
    <NavBar />
     <Banner />

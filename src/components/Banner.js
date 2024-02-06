@@ -31,16 +31,21 @@ useEffect(() => {
 }, [text])
 
 const tick = () => {
+    // Calculate the index within the toRotate array based on the current loopNum
     let inter = loopNum % toRotate.length;
+    // Get the full text corresponding to the current index
     let fulltext = toRotate[inter];
+    // Determine the updated text based on whether characters are being added or deleted
     let updatedText = isDeleting ? fulltext.substring(0, text.length - 1) : fulltext.substring(0, text.length + 1);
 
     setText(updatedText);
 
+    // Adjust the speed of character deletion
     if (isDeleting) {
         setDelta(PrevDelta => PrevDelta /2)
     }
 
+    // Check if the text is fully typed out before starting deletion
     if (!isDeleting && updatedText === fulltext) {
         setIsDeleting(true);
         setDelta(period);
@@ -52,7 +57,7 @@ const tick = () => {
 
  }
 
-
+// Render JSX representing the banner section of the portfolio
 return(
    <section className="banner" id="home">
         <Container>

@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-
+// Define a functional component named ExpCard and destructure props
 export const ExpCard = ({title,description,imgURL}) => {
 
     return(

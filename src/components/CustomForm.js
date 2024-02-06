@@ -7,8 +7,11 @@ const postURL = `${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_AP
 return(
     <>
     <MailchimpSubscribe
+     // Pass the URL for the Mailchimp post request
     url={postURL}
+    // Render prop pattern to customize the behavior of MailchimpSubscribe component
     render={({ subscribe, status, message}) => (
+        // Render the Newsletter component and pass necessary props
         <Newsletter
             status={status}
             message={message}

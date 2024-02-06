@@ -7,10 +7,12 @@ export const Newsletter = ({onValidated, status, message}) => {
 
     const [email, setEmail] = useState('');
 
+    // Effect to clear email field when status changes to 'success'
     useEffect(() => {
         if (status === 'success') clearFields();
     }, [status])
     
+    // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         email &&
@@ -20,11 +22,12 @@ export const Newsletter = ({onValidated, status, message}) => {
         })
     }
 
+    // Function to clear email field
     const clearFields = () => {
         setEmail('');
     }
 
-
+    // Return JSX representing the newsletter section
     return(
         <Col lg={12}>
         <div className="newsletter-bx">

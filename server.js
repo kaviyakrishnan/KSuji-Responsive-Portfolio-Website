@@ -27,11 +27,15 @@ console.log ("Ready to Send");
 }
 });
 
+// Route handler for POST request to "/contact"
 router.post("/contact", (req, res) => {
+    // Extract data from request body
     const name = req.body.firstName + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
     const phone = req.body.phone;
+
+    // Construct email content
     const mail = {
         from: name,
         to: "kaviyakrishnan25@gmail.com",
@@ -43,6 +47,7 @@ router.post("/contact", (req, res) => {
 
     };
  
+    // Send email using nodemailer
     contactEmail.sendMail(mail, (error) => {
         if (error) {
             res.json (error);
